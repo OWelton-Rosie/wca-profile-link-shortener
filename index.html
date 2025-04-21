@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WCA Link Shortener</title>
+  <link rel="stylesheet" href="full.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>WCA Link Shortener</h1>
+    <input type="text" id="wcaUrl" placeholder="Paste your WCA profile URL here" />
+    <button onclick="shortenUrl()">Shorten URL</button>
+    <div class="result" id="result"></div>
+    <div id="toast" class="toast">Copied to clipboard!</div>
+  </div>
+
+  <script src="logic.js"></script>
+
+</body>
+</html>
