@@ -55,38 +55,18 @@ button:hover {
   color: #1a73e8;
   word-break: break-all;
 }
-.copy-btn {
-  background-color: #34a853;
-  box-shadow: 0 5px 15px rgba(52, 168, 83, 0.2);
-}
-.copy-btn:hover {
-  background-color: #2c8b46;
-}
-.toast {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #4caf50;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 999px;
-  font-size: 0.95rem;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-}
-.toast.show {
-  opacity: 1;
-}
 
 a {
-  color: #1a73e8;
+  color: #0ba156;
   text-decoration: none;
+}
+
+a:hover {
+  color: #0ba156;
+  text-decoration: underline;
 }
 
 a:visited {
-  color: #1a73e8;
-  text-decoration: none;
+  color: #109860;
+  text-decoration: underline;
 }
