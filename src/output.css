@@ -1,0 +1,38 @@
+.output-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    word-break: break-word;
+  }
+  
+  .output-box code,
+  .output-box a {
+    color: #000103;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  .output-box a:hover {
+    color: #0c56c1;
+    text-decoration: underline;
+  }
+  
+  .output-box button.copy-btn {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+  }
+  
+  .output-box button.copy-btn:hover {
+    background-color: #0c56c1;
+  }
+  
