@@ -10,4 +10,9 @@ Anyone can use this program and its code for free. Please review the terms in th
 
 # Development
 ## Running the project locally
-```git clone https://github.com/OWelton-Rosie/wca-profile-link-shortener```
+Run the command:
+```
+git clone https://github.com/OWelton-Rosie/wca-profile-link-shortener
+```
+
+This projects has no dependencies.
