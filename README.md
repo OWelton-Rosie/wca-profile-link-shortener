@@ -7,3 +7,7 @@ This program uses simple JavaScript to convert default `worldcubeassocistion.org
 
 ## Licensing
 Anyone can use this program and its code for free. Please review the terms in the <a href="https://github.com/OWelton-Rosie/wca-profile-link-shortener/blob/main/LICENSE">license</a>.
+
+# Development
+## Running the project locally
+```git clone https://github.com/OWelton-Rosie/wca-profile-link-shortener```
