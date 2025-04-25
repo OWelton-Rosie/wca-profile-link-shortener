@@ -12,7 +12,7 @@ function shortenUrl() {
 
     resultDiv.innerHTML = `
       <div class="output-box">
-        <strong>Shortened URL (Clickable)</strong>
+        <strong>Shortened URL (Click to test)</strong>
         <code><a href="${shortUrl}" target="_blank">${shortUrl}</a></code>
         <br><button class="copy-btn" onclick="copyToClipboard('${shortUrl}', this)">Copy</button>
       </div>
@@ -22,7 +22,7 @@ function shortenUrl() {
         <br><button class="copy-btn" onclick="copyToClipboard('${shortUrl}', this)">Copy</button>
       </div>
       <div class="output-box">
-        <strong>HTML</strong>
+        <strong>HTML Code</strong>
         <code>${escapeHtml(htmlLink)}</code>
         <br><button class="copy-btn" onclick="copyToClipboard('${escapeHtml(htmlLink)}', this)">Copy</button>
       </div>
@@ -35,23 +35,6 @@ function shortenUrl() {
   } else {
     resultDiv.innerHTML = "❌ Please enter a valid WCA profile URL.";
   }
-}
-
-function copyToClipboard(text, buttonElement) {
-  navigator.clipboard.writeText(text).then(() => {
-    if (buttonElement) {
-      const originalText = buttonElement.textContent;
-      buttonElement.textContent = "Copied!";
-      buttonElement.disabled = true;
-
-      setTimeout(() => {
-        buttonElement.textContent = originalText;
-        buttonElement.disabled = false;
-      }, 1500);
-    }
-  }).catch(err => {
-    console.error("Failed to copy: ", err);
-  });
 }
 
 // Escapes special characters for HTML output
