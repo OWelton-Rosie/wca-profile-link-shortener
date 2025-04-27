@@ -5,9 +5,6 @@ Useful for social media bios, this program lets you enter a `worldcubeassociatio
 
 This program uses simple JavaScript to convert default (and long!) `worldcubeassocistion.org` links into <a href="https://github.com/thewca/wca.link">`wca.link`</a> links. 
 
-## Licensing
-Anyone can use this program and its code for free. Please review the terms in the <a href="https://github.com/OWelton-Rosie/wca-profile-link-shortener/blob/main/LICENSE">license</a>.
-
 # Development
 ## Running the project locally
 Run the command:
