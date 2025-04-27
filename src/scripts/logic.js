@@ -17,17 +17,17 @@ function shortenUrl() {
         <br><button class="copy-btn" onclick="copyToClipboard('${shortUrl}', this)">Copy</button>
       </div>
       <div class="output-box">
-        <strong>Plain Text</strong>
+        <strong>Plain Text (Facebook, X, LinkdIn, WhatsApp, Snapchat, YouTube, Pinterest)</strong>
         <code>${shortUrl}</code>
         <br><button class="copy-btn" onclick="copyToClipboard('${shortUrl}', this)">Copy</button>
       </div>
       <div class="output-box">
-        <strong>HTML Code</strong>
+        <strong>HTML Code (for HTML files)</strong>
         <code>${escapeHtml(htmlLink)}</code>
         <br><button class="copy-btn" onclick="copyToClipboard('${escapeHtml(htmlLink)}', this)">Copy</button>
       </div>
       <div class="output-box">
-        <strong>Markdown</strong>
+        <strong>Markdown (Discord, Reddit)</strong>
         <code>${markdownLink}</code>
         <br><button class="copy-btn" onclick="copyToClipboard('${markdownLink}', this)">Copy</button>
       </div>
