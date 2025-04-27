@@ -12,4 +12,4 @@ Run the command:
 git clone https://github.com/OWelton-Rosie/wca-profile-link-shortener
 ```
 
-This projects has no dependencies.
+This project has no dependencies.
