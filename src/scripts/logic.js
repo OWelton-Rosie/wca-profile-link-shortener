@@ -14,7 +14,6 @@ function shortenUrl() {
       <div class="output-box">
         <strong>Shortened URL (Click to test)</strong>
         <code><a href="${shortUrl}" target="_blank">${shortUrl}</a></code>
-        <br><button class="copy-btn" onclick="copyToClipboard('${shortUrl}', this)">Copy</button>
       </div>
       <div class="output-box">
         <strong>Plain Text (Facebook, X, LinkdIn, WhatsApp, Snapchat, YouTube, Pinterest)</strong>
