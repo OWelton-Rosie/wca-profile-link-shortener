@@ -20,30 +20,6 @@
     <p><a href="https://github.com/OWelton-Rosie/wca-profile-link-shortener" target="_blank">GitHub</a>. Written by <a href="https://owelton-rosie.pages.dev" target="_blank">Oscar Welton-Rosie</a>.</p>
   </div>
 
-  <script>
-    // Registering the Service Worker
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/sw.js').then((registration) => {
-                console.log('Service Worker registered with scope:', registration.scope);
-            }).catch((error) => {
-                console.log('Service Worker registration failed:', error);
-            });
-        });
-    }
-
-    // Reset Times Function
-    function resetTimes() {
-        // Clear the time limit input
-        document.getElementById('timeLimit').value = '';
-
-        // Clear all attempt time inputs
-        document.getElementById('solveTimesContainer').innerHTML = '';
-
-
-    }
-</script>
-
 
   <script src="./scripts/logic.js"></script>
   <script src="./scripts/copy.js"></script>
