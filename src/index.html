@@ -4,25 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WCA Profile Link Shortener</title>
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="./styles/base.css"> 
   <link rel="stylesheet" href="./styles/output.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    .js-required-hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <noscript>You need to enable JavaScript to run this app. <a href="https://www.enable-javascript.com/" target="_blank">How?</a></noscript>
 
-    <br>
-    <br>
+  <!-- Message for users without JavaScript -->
+  <noscript>
+    <style>
+      #mainContent { display: none !important; }
+      body {
+        padding: 2rem;
+        font-family: sans-serif;
+      }
+    </style>
+    <div>
+      You need to enable JavaScript to run this app.
+      <a href="https://www.enable-javascript.com/" target="_blank">How?</a>
+    </div>
+  </noscript>
 
+  <!-- Main app content (hidden by default if JS is off) -->
+  <div class="container js-required-hidden" id="mainContent">
     <h1>WCA Profile Link Shortener</h1>
     <input type="text" id="wcaUrl" placeholder="Paste your WCA profile URL here">
     <button onclick="shortenUrl()">Shorten URL</button>
     <div class="result" id="result"></div>
-    <p><a href="https://github.com/OWelton-Rosie/wca-profile-link-shortener" target="_blank">GitHub</a>. Written by <a href="https://owelton-rosie.pages.dev" target="_blank">Oscar Welton-Rosie</a>.</p>
+    <p>
+      <a href="https://github.com/OWelton-Rosie/wca-profile-link-shortener" target="_blank">GitHub</a>.
+      Written by <a href="https://owelton-rosie.pages.dev" target="_blank">Oscar Welton-Rosie</a>.
+    </p>
   </div>
 
+  <!-- JS to reveal content -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("mainContent").classList.remove("js-required-hidden");
+    });
+  </script>
 
+  <!-- Main logic scripts -->
   <script src="./scripts/logic.js"></script>
   <script src="./scripts/copy.js"></script>
 
