@@ -5,6 +5,9 @@ Useful for social media bios, this program lets you enter a `worldcubeassociatio
 
 This program uses simple JavaScript to convert default (and long!) `worldcubeassociation.org` links into <a href="https://github.com/thewca/wca.link">`wca.link`</a> links. 
 
+# Todo
+- Make the project accept `worldcubeassociation.org/regulations/REGULATION`, `www.worldcubeassociation.org/regulations/full/REGULATION` and `https://www.worldcubeassociation.org/regulations/guidelines.html/GUIDELINE` URLS.
+
 # Development
 ## Running the project locally
 Run the command:
