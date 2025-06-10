@@ -51,17 +51,15 @@ button:hover {
   word-break: break-word;
 }
 
-a {
-  color: #1a73e8; 
-  text-decoration: none;
-}
-
- 
+a,
 a:visited {
   color: #1a73e8; 
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+
+a:hover,
+a:visited:hover {
+  color: #0e3f7f; 
+  text-decoration: none;
 }
